@@ -13,6 +13,7 @@ import { client, previewClient } from '@src/lib/client';
 import { revalidateDuration } from '@src/pages/utils/constants';
 
 const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
+
   const { t } = useTranslation();
 
   const page = useContentfulLiveUpdates(props.page);
